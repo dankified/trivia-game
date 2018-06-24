@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon index.js",
     "start": "node index.js",
-    "heroku-postbuild": "cd client && npm install && npm run build && rm dist/client/js/*.map && rm dist/client/css/*.map"
+    "heroku-postbuild": "cd client && npm install && npm run build && rm build/static/js/*.map && rm build/static/css/*.map"
   },
   "keywords": [],
   "author": "",
