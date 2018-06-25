@@ -1,8 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import React, {Component} from 'react';
+import App from './components/App';
+import {BrowserRouter, Route} from 'react-router-dom';
+import {render} from 'react-dom';
+import './css/style.css';
+import 'semantic-ui-css/semantic.min.css';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+
+class Root extends Component {
+
+  render() {
+    return (
+      <div>
+        <App />
+      </div>
+    )
+  }
+}
+
+render(<Root />, document.getElementById('root'));
